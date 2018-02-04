@@ -1,0 +1,87 @@
+<!--    Lab 1 - Chat,   Sarantsetseg Hedenfalk   -->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Lab 1 - Realtime Chat - Sara</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+	<script src="script/scripts.js"></script>
+
+</head>
+<body>
+<div id="wrap">
+
+	<header>
+		<h1 id="titleHeader">Welcome to the realtime chat service!</h1>
+	</header>
+	<section id="hero">
+	</section>
+
+
+	<section id="login">
+
+		<div id="formwrap">
+					<h2 id="formTitle">Please enter your name to start a chat</h2>
+
+					<div id="form_content">
+						<form action="">
+							<input type = "text" id = "name" placeholder="Your name ..." />
+				
+							<button type = "button" id="btnSave"> Sign in </button>
+							<button type = "button" id="btnSignOut"> Sign out </button>
+						</form>
+ 					</div>
+				</div>
+
+			
+	</section>
+
+
+	<section id="chat">
+		<div id="chatHeader">
+			<p id="chatName"></p>
+			<p id="dot"></p>
+			<p id="online"></p>
+			
+		</div>
+
+		<div id="msgWrap">
+<!--
+			<div class="divDate">
+				<p class="pDate">01 february 2018</p>
+				<hr class="hrDate">
+				
+			</div>
+			
+			<div class="divMsg">
+				<p class="nameMsg">dara</p>
+				<p class="time">14:20</p>
+				<p class="pMsg">jgsklflasödöadadlllllllljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+				<hr class="hrMsg">
+			</div>
+-->	
+
+		</div>
+
+		<div id="inputChat">
+			<hr>
+			<textarea id="inputMsg" placeholder="Type your message ..."></textarea>
+
+			<button type = "button" id="btnSend"> Send </button>
+		</div>
+		
+	</section>
+		
+
+	<footer>
+
+	</footer>
+	
+</div>
+</body>
+</html>

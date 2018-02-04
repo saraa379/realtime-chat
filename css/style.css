@@ -1,0 +1,317 @@
+* {
+	box-sizing: border-box;
+}
+
+/*
+colors
+
+text colors
+black : #212121 (on white, bg)
+grey: #075075; (on white)
+red warning: DD2C00;
+
+BG
+blue-header: #138bf4;
+blue-hero: 039BE5;
+section-grey: #ECEFF1; (lightgrey bg)
+footer dark grey: #78909C, #0303C42;
+*/
+
+html {
+	height: 100%;
+	font-size: 16px;
+	min-width: 250px;
+	background-color: #ECEFF1;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	word-wrap: break-word;
+	line-height: 30px;
+}
+
+.aligncenter {
+	text-align: center;
+}
+.mcenter {
+	margin: auto;
+}
+
+h1 {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all .3s ease-in-out;
+}
+ /*Header styles*/
+ header {
+		width: 100%;
+		height: 40px;
+		background-color: #138bf4;
+		z-index: 2;
+		top: 0;
+		padding-top: 0;
+		transition: all .3s ease-in-out;
+	}
+	h1 {
+		color: white;
+		text-align: center;
+		top: 3px;
+		position: relative;
+	}
+
+/*Hero Styles*/
+#hero {
+		width: 100%;
+		height: 300px;
+		z-index: 0;
+		position: absolute;
+		background-color: #039BE5;
+	}
+
+/*Section Login styles*/
+
+#login {
+	background-color: transparent;
+	position: relative;
+}
+
+	div#formwrap {
+		border-radius: 4px;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+		#form_content {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+			#formwrap h2 {
+				padding-top: 50px;
+				padding-bottom: 0;
+				padding-left: 20px;
+				padding-right: 20px;
+			    letter-spacing: -.035em;
+			    color: white;
+			} 
+
+				input {
+					 outline: none;
+					 transition: .2s all linear;
+					 display: flex;
+					 padding: 8px;
+					 width: 100%;
+					 margin: 10px 0;
+					 height: 31px;
+				}
+
+				#btnSave {
+					width: 90px;
+					height: 30px;
+					background-color: #ECEFF1;
+					color: #78909C;
+					font-weight: bold;
+					font-size: 1rem;
+					text-align: center;
+					border-radius: 3px;
+				}
+				#btnSignOut {
+					width: 90px;
+					height: 30px;
+					background-color: #ECEFF1;
+					color: #78909C;
+					font-weight: bold;
+					font-size: 1rem;
+					text-align: center;
+					border-radius: 3px;
+				}
+
+/*Section Chat styles*/
+#chat {
+	background-color: white;
+	position: relative;
+	max-width: 600px;
+	margin: 30px auto;
+	height: 600px;
+}
+	#chatHeader p {
+		display: inline;
+	}
+	
+	#chatHeader {
+		width: 100%;
+		height: 50px;
+		background-color: #ECEFF1; 
+	}
+	#chatName {
+		color: #212121; /*#78909C, #0303C42;*/
+		font-weight: bold;
+		position: relative;
+		bottom: 4px;
+		left: 17px;
+	}
+	#dot {
+		font-size: 3.5rem;
+		color: green;
+		font-weight: 900;
+		position: relative;
+		bottom: 7px;
+		margin-left: 20px;
+		display: none;
+	}
+	#online {
+		font-size: 0.8rem;
+		color: #78909C;
+		bottom: 6px; 
+		position: relative;
+		display: none;
+	}
+	#inputChat {
+		position: relative;
+		width: 100%;
+		height: 55px;
+		top: 0;
+		background-color: white;
+		padding: 0;
+	}
+	#inputChat hr {
+		position: relative;
+		top: 0;
+		background-color: white;
+		margin: 0;
+	}
+	#inputMsg {
+		position: relative;
+		width: 85%;
+		height: 55px;
+		display: inline-block;
+		border: none;
+		outline: none;
+		padding: 8px;
+	}
+	#btnSend {
+		width: 70px;
+		height: 35px;
+		background-color: #138bf4;
+		color: white;
+		font-weight: bold;
+		font-size: 1rem;
+		text-align: center;
+		display: inline-block;
+		float: right;
+		border: 2px solid #1C86EE;
+		transition: .2s all linear;
+		border-radius: 3px;
+		position: relative;
+		top: 10px;
+		margin-right: 3px;
+	}
+
+/*Div msgWrap styles*/
+#msgWrap {
+	width: 100%;
+	display: flex;
+	height: 543px;
+	background-color: white;
+	position: relative;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	overflow: scroll;
+}
+	/*Date styles*/
+	.divDate {
+		width: 100%;
+		background-color: white;
+		margin-top: 10px;
+	}
+	.pDate {
+		font-size: 0.6rem;
+		font-weight: bold;
+		color: #78909C;
+		margin-left: 25px;
+	}
+	.hrDate {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 0;
+	}
+    /*Message styles*/
+	.divMsg {
+		width: 100%;
+		background-color: white;
+		margin-top: 0;
+		position: relative;
+	}
+	.nameMsg, .pMsg, .hrMsg {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.nameMsg {
+		font-size: 0.9rem;
+		font-weight: bold;
+		color: #212121;
+		display: inline;
+	}
+	.time {
+		float: right;
+		margin-right: 20px;
+		font-size: 0.6rem;
+		color: #78909C; 
+		display: inline;
+		position: relative;
+		top: 6px;
+	}
+	.pMsg {
+		font-size: 0.8rem;
+		color: #78909C;
+		max-width: 550px;
+		line-height: 1.2;
+	}
+
+
+/*Footer styles*/
+
+footer {
+	width: 100%;
+	height: 50px;
+	margin-top: 50px;
+	background-color: #78909C; /*#78909C, #0303C42;*/
+}
+
+/*Media queries*/
+@media (max-width: 500px) {
+	#inputMsg {
+		width: 80%;
+	}
+}
+@media (max-width: 370px) {
+	#inputMsg {
+		width: 75%;
+	}
+}
+
+@media (max-width: 350px) {
+	#form_content {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	div#formwrap {
+		max-width: 250px;
+	}
+}
+@media (max-width: 300px) {
+	header {
+		height: 70px;
+	}
+	#inputMsg {
+		width: 70%;
+	}
+}
+
