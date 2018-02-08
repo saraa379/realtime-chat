@@ -121,6 +121,11 @@ window.addEventListener('load', function(event) {
 			newDiv.classList.add("divMsg");
 
 			//Adding child into chat window
+			//hr line
+			const msgHr = document.createElement('hr');
+			msgHr.classList.add("hrMsg");
+			newDiv.appendChild(msgHr);
+			
 			//username of the message
 			const nameP = document.createElement('p');
 			nameP.classList.add("nameMsg");
@@ -141,10 +146,7 @@ window.addEventListener('load', function(event) {
 			msgP.innerHTML = lastMsg.message;
 			newDiv.appendChild(msgP);
 
-			//hr line
-			const msgHr = document.createElement('hr');
-			msgHr.classList.add("hrMsg");
-			newDiv.appendChild(msgHr);
+			
 
 			msgWrap.appendChild(newDiv);
 		}
@@ -311,9 +313,4 @@ function storageAvailable(type) {
 }
 
 
-
-
-
-
-	
 
