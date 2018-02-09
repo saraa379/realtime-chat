@@ -22,12 +22,15 @@ html {
 	font-size: 16px;
 	min-width: 250px;
 	background-color: #ECEFF1;
+	position: relative;
 }
 
 body {
 	font-family: 'Open Sans', Arial, sans-serif;
 	word-wrap: break-word;
 	line-height: 30px;
+	position: relative;
+	height: 100%;
 }
 
 .aligncenter {
@@ -281,9 +284,10 @@ a {
 footer {
 	width: 100%;
 	height: 30px;
-	margin-top: 50px;
+	position: relative;
 	background-color: #138bf4; /*#78909C, #0303C42;*/
 	opacity: 0.8;
+	bottom: 0;
 }
 
 /*Media queries*/
